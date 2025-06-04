@@ -1,0 +1,151 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #781e78 0%, #36d4ad 35%, #e998d1 70%, #e2b24a 100%);
+    color: #f1f0f7;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #f5f0ff;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+  }
+  
+  input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #f4ecfa;
+    color: #2e2d4e;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    margin-bottom: 15px;
+  }
+  
+  input:focus {
+    background-color: #e7d3fa;
+    box-shadow: 0 0 8px 2px rgba(160, 108, 213, 0.6);
+  }
+  
+  button {
+    width: 100%;
+    max-width: 400px;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    color: white;
+    background: linear-gradient(90deg, #2a9d93, #e55dce);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(155, 93, 229, 0.4);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  button:hover {
+    background: linear-gradient(90deg, #7b2cbf, #c77dff);
+    box-shadow: 0 8px 20px rgba(199, 125, 255, 0.6);
+  }
+  
+/* Tabela com visual limpo */
+table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+  
+/* Cabeçalho da tabela */
+thead th {
+    background-color: #6a4e90;
+    color: white;
+    padding: 15px 145px;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Linhas pares */
+tbody tr:nth-child(even) {
+    background-color: #f1e8fb;
+}
+
+/* Hover em linhas */
+tbody tr:hover {
+    background-color: #e2cfff;
+    cursor: default;
+}
+
+/* Células da tabela */
+tbody td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 1rem;
+    color: #2b2d42;
+}
+
+/* Estilo para o card de informações do DDD */
+.card-ddd {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffffcc;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-top: 25px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    color: #2e2d4e;
+    backdrop-filter: blur(4px);
+  }
+  
+  /* Estilo para cada linha de informação */
+  .info-item {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    padding-left: 28px;
+    position: relative;
+  }
+  
+  /* Adiciona um ícone decorativo na frente */
+  .info-item::before {
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    top: 0;
+  }
+  
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .grupo {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+ 
+  @media screen and (min-width: 769px) {
+    .grupo {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+                          

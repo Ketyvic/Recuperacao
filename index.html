@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de endereços</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <label for="input_DDD">Digite o DDD</label>
+    <input type="text" id="input_DDD" />
+
+    <button id="botao_buscar">BUSCAR</button>
+
+    <h2>Dados do DDD</h2>
+
+    <div id="DDD_info" class="card-ddd">
+        <p id="Estado" class="info-item"></p>
+        <p id="Lista_cidades" class="info-item"></p>
+    </div>
+      
+
+ <!-- Tabela que exibirá os contatos cadastrados -->
+ <table id="tabela_ddd">
+    <thead>
+        <tr>
+            <th>DDD</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody></tbody> <!-- Onde as linhas dos contatos serão inseridas -->
+</table>
+
+  </body>
+</html>
