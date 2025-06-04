@@ -11,14 +11,13 @@ function BuscarDDD(){
     // Depois que os dados são recebidos, executa a função com os dados
     .then((dados) => {
 
-        if (dados) {  // Se o livro existe no resultado
+        if (dados) {  // Se o DDD existe no resultado
             dados.ddd = inputDDD;
             Listaddd= dados;
 
-            // Atualiza o texto do elemento com id "estado" para mostrar o título do livro
+           
             document.getElementById("Estado").textContent = "Estado: " + dados.state;
 
-            // Atualiza as categorias, juntando nomes separados por vírgula, ou "Não informado"
             document.getElementById("Lista_cidades").innerHTML =
             "Cidades:<br>" + dados.cities.map(cidade => `• ${cidade}`).join("<br>");
           
@@ -56,7 +55,7 @@ function inserirNaTabela(Listaddd) {
 // Função para configurar os eventos da página, neste caso o botão Buscar
 function configurarEventos() {
     
-    // Evento do botão Buscar chama a função BuscarLivro
+    // Evento do botão Buscar chama a função BuscarDDD
     document.getElementById("botao_buscar").addEventListener("click", BuscarDDD);
 }
 
